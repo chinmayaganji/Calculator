@@ -1,0 +1,82 @@
+body{
+    background-color:wheat;
+}
+
+input {
+    text-align: right;
+    width:230px;
+    padding: 15px;
+    background-color: turquoise;
+    border-radius: 15px;
+    color: blue;
+}
+
+button:focus{
+    outline: none;
+}
+
+/* styles for buttons */
+button {
+    background-color: darkcyan;
+    /* background-color: black; */
+    /* opacity: 0.8; */
+    display: inline;
+    height:50px;
+    width:50px;
+    margin:2px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: snow;
+}
+
+button:hover{
+    /* background-color: goldenrod; */
+    background-color: black;
+}
+
+.btns{
+    margin-top: 10px;
+}
+
+/* styles for conatiner i.e calculator */
+#container{
+    width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: content-box;
+    background-color:white;
+    border: 2px solid grey;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 5px;
+}
+
+/* styles for h2 i.e header */
+h2{
+    padding-top: 10px ;
+    padding-left:8px;
+    text-align: center;
+    color: teal;
+}
+
+/* style for equals to ( = ) button */
+#equals{
+    background-color: red;
+}
+
+/* styles for clearing buttons i.e AC,C */
+.clear{
+    background-color: rgb(8, 32, 119) ;
+}
+
+/* style for special operators i.e ('POW','MOD') */
+.specialOps{
+    background-color: #2e3447;
+}
+
+/* style for operators ('+','-','X','/') */
+.ops{
+    background-color: orangered;
+}
+

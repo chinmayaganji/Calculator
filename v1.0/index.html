@@ -1,0 +1,71 @@
+<!--
+    * File Name :index.html
+    * Author Name: chinmaya
+    * Purpose : To perform basic calculations
+    * Version : 1.0
+-->
+
+<html>
+
+    <head>
+
+        <title>calculator</title>
+
+        <!-- llinking css file -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- providing external script -->
+        <script src="script.js"></script>
+
+        <!-- for responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <!-- header -->
+        <header><h2 >Calculator</h2></header>
+
+        <!-- main -->
+        <main>
+            <div id="container">
+
+                <!-- calculator display -->
+                <input type="text" value="0" id="result" disabled><br>
+
+                <!-- buttons for calculator -->
+                <div class="btns">
+                    <button value="Allclear" onclick=allclear() class="clear"><b>AC</b></button>
+                    <button onclick="clearOneElement()" class="clear"><b>C</b></button>
+                    <button onclick="addtoDisplay('%')" class="specialOps"><b>MOD</b></button>
+                    <button onclick="addtoDisplay('+')" class="ops"><b>+</b></button><br>
+                    <button onclick="addtoDisplay(1)"><b>1</b></button>
+                    <button onclick="addtoDisplay(2)"><b>2</b></button>
+                    <button onclick="addtoDisplay(3)"><b>3</b></button>
+                    <button onclick="addtoDisplay('-')" class="ops"><b>-</b></button><br>
+                    <button onclick="addtoDisplay(4)"><b>4</b></button>
+                    <button onclick="addtoDisplay(5)"><b>5</b></button>
+                    <button onclick="addtoDisplay(6)"><b>6</b></button>
+                    <button onclick="addtoDisplay('*') " class="ops"><b>X</b></button><br>
+                    <button onclick="addtoDisplay(7)"><b>7</b></button>
+                    <button onclick="addtoDisplay(8)"><b>8</b></strong></button>
+                    <button onclick="addtoDisplay(9)"><b>9</b></button>
+                    <button onclick="addtoDisplay('/')" class="ops"><b>/</b></button><br>
+                    <button onclick="addtoDisplay('.')"><b>.</b></button>
+                    <button onclick="addtoDisplay(0)"><b>0</b></button>
+                    <button onclick="addtoDisplay('**')" class="specialOps"><b>POW</b></button>
+                    <button id="equals" onclick="calculate()"><b>=</b></button>
+                </div>
+            </div>
+            <br>
+        </main>
+                
+
+        <!-- footer -->
+        <footer style="text-align: center;">
+            &copy chinmaya.com All rights reserved.
+        </footer>
+    </body>
+
+</html>
